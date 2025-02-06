@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set default text color to white */
+}
+
+header {
+    background: goldenrod; /* Header background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Center the header items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: goldenrod; /* Footer background color */
+    color: white;
+}
+
+/* Enhanced styles */
+h1 {
+    color: gold; /* Gold color for main headings */
+}
+
+h2 {
+    text-align: center; /* Center the h2 heading */
+    color: goldenrod; /* Golden rod color for subheadings */
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#products {
+    display: grid; /* Use grid layout for products */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between products */
+    margin-top: 20px; /* Space above the product section */
+    justify-items: center; /* Center items in the grid */
+}
+
+.product {
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Increased padding for uniformity */
+    text-align: center;
+    background-color: #222; /* Dark background for product cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.product img {
+    width: 250px; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px; /* Keep rounded corners for images */
+}
+
+.add-to-cart {
+    background-color: goldenrod; /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    margin-top: 10px; /* Ensure consistent spacing above the button */
+}
+
+.add-to-cart:hover {
+    background-color: gold; /* Button hover color */
+}
+
+/* Styles for cart page */
+#cart-items {
+    margin-top: 20px;
+}
+
+#cart-items div {
+    margin-bottom: 10px;
+}
+
+/* Styles for contact form */
+form {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none; /* Remove border */
+    border-bottom: 2px solid goldenrod; /* Add a bottom border */
+    background-color: transparent; /* Remove background color */
+    color: white; /* Text color */
+}
+
+textarea {
+    height: 100px; /* Set a specific height for the textarea */
+}
+
+input[type="submit"] {
+    background-color: goldenrod; /* Submit button background color */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: gold; /* Submit button hover color */
+}
+
+/* Styles for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: black;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

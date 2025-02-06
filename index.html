@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" id="view-cart">Cart</a></li> <!-- Added Cart link -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Our PlayStation Store</h1>
+        <p>Explore our collection of PlayStation devices and accessories.</p>
+        <h2>Available Products</h2>
+
+        <section id="products">
+            <div class="product">
+                <img src="images/ps5.jpg" alt="PlayStation 5" />
+                <h3>PlayStation 5</h3>
+                <p>Price: $499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Ps4.webp" alt="PlayStation 4" />
+                <h3>PlayStation 4</h3>
+                <p>Price: $299.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/controller.jpeg" alt="PlayStation Controller" />
+                <h3>PlayStation Controller</h3>
+                <p>Price: $59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/ps.vr.webp" alt="PlayStation VR" />
+                <h3>PlayStation VR</h3>
+                <p>Price: $399.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/ps cam.jpg" alt="PlayStation Camera" />
+                <h3>PlayStation Camera</h3>
+                <p>Price: $59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/chair.jpeg" alt="Gaming Chair" />
+                <h3>Gaming Chair</h3>
+                <p>Price: $199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/headset.webp" alt="PlayStation Headset" />
+                <h3>PlayStation Headset</h3>
+                <p>Price: $99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/games.webp" alt="PlayStation Game" />
+                <h3>PlayStation Game</h3>
+                <p>Price: $59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Cart Summary Modal -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Cart Summary</h2>
+                <div id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <h2>Total Items: <span id="total-items">0</span></h2>
+                <h2>Total Amount: $<span id="total-amount">0.00</span></h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your PlayStation Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
